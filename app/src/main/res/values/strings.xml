@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MosquitoOff</string>
+    <string name="logo_description">Logotipo do aplicativo MosquitoOff</string>
+    <string name="google_maps_key">AIzaSyCK4EL-oclxbfElKaIdyXx03AJC4J-UzkQ</string>
+</resources>

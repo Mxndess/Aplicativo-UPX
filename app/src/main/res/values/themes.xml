@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.MosquitoOff" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Cor primária (botões, destaque) -->
+        <item name="colorPrimary">@color/cor_primaria</item>
+        <!-- Cor secundária (detalhes, seleção) -->
+        <item name="colorSecondary">@color/cor_secundaria</item>
+        <!-- Cor de fundo da tela -->
+        <item name="android:windowBackground">@color/cor_fundo</item>
+    </style> <!-- ESSA LINHA estava faltando -->
+
+    <style name="Theme.MosquitoOff" parent="Base.Theme.MosquitoOff" />
+</resources>
