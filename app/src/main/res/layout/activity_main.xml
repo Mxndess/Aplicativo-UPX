@@ -9,6 +9,34 @@
     android:padding="24dp"
     tools:context=".MainActivity">
 
+    <!-- Botões de topo: Deslogar e Sair -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginBottom="12dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/botaoDeslogar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deslogar"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#607D8B"
+            android:layout_marginEnd="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/botaoSair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sair"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#9E9E9E" />
+    </LinearLayout>
+
     <!-- Logo -->
     <ImageView
         android:id="@+id/logoImageView"
@@ -22,27 +50,21 @@
     <!-- Card de alerta -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="6dp"
+        android:layout_height="40dp"
         android:layout_marginBottom="16dp"
-        app:cardBackgroundColor="@android:color/white">
+        android:backgroundTint="@android:color/white"
+        android:padding="20dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp">
 
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Ajude a combater a dengue 🚨"
-                android:textColor="#222"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-        </LinearLayout>
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Ajude a combater a dengue 🚨"
+            android:textColor="#222"
+            android:textSize="16sp"
+            android:textStyle="bold" />
     </androidx.cardview.widget.CardView>
 
     <!-- Campo de busca -->
@@ -60,46 +82,72 @@
             android:layout_height="wrap_content" />
     </androidx.cardview.widget.CardView>
 
-    <!-- Botões -->
+    <!-- Botões principais -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginBottom="16dp">
+        android:layout_marginBottom="12dp">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/botaoAdicionar"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:text="Adicionar"
+            android:textSize="10sp"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
-            android:layout_marginEnd="8dp"
-            android:drawableStart="@drawable/ic_mosquito"
-            android:drawablePadding="8dp"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:minHeight="48dp"
-            android:background="@drawable/botao_adicionar" />
+            app:icon="@drawable/ic_mosquito"
+            app:iconPadding="4dp"
+            app:iconGravity="textStart"
+            app:backgroundTint="#4CAF50"
+            android:layout_marginEnd="4dp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/botaoDesfazer"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:text="Desfazer"
+            android:textSize="10sp"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
-            android:layout_marginStart="8dp"
-            android:drawableStart="@drawable/ic_undo"
-            android:drawablePadding="8dp"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:minHeight="48dp"
-            android:background="@drawable/botao_desfazer" />
+            app:icon="@drawable/ic_undo"
+            app:iconPadding="4dp"
+            app:iconGravity="textStart"
+            app:backgroundTint="#F44336"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/botaoRemover"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Remover"
+            android:textSize="10sp"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            app:icon="@drawable/ic_undo"
+            app:iconPadding="4dp"
+            app:iconGravity="textStart"
+            app:backgroundTint="#FF9800"
+            android:layout_marginStart="4dp" />
     </LinearLayout>
+
+    <!-- Botão de Exportar PDF -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/botaoExportarPDF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exportar PDF"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:backgroundTint="#3F51B5"
+        android:layout_marginBottom="16dp" />
 
     <!-- Mapa -->
     <androidx.cardview.widget.CardView

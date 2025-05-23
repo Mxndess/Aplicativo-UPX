@@ -1,5 +1,22 @@
 <resources>
     <string name="app_name">MosquitoOff</string>
-    <string name="logo_description">Logotipo do aplicativo MosquitoOff</string>
+    <string name="logo_description">Logo do MosquitoOff</string>
     <string name="google_maps_key">AIzaSyCK4EL-oclxbfElKaIdyXx03AJC4J-UzkQ</string>
+
+    <!-- Login -->
+    <string name="usuario_hint">Usuário</string>
+    <string name="senha_hint">Senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="login_erro">Usuário ou senha inválidos!</string>
+
+    <!-- Mapa -->
+    <string name="alerta_mensagem">Ajude a combater a dengue 🚨</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="desfazer">Desfazer</string>
+    <string name="deslogar">Deslogar</string>
+    <string name="sair">Sair</string>
+    <string name="msg_marcador_ja_existente">Já existe um marcador neste local.</string>
+    <string name="msg_selecione_local">Selecione um local primeiro.</string>
+    <string name="msg_sem_marcador">Nenhum marcador para desfazer.</string>
+    <string name="msg_erro_busca">Erro ao buscar endereço</string>
 </resources>
